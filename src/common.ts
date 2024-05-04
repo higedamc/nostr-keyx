@@ -34,14 +34,33 @@ const DEFAULT_URL_LIST = ['https://snort.social', 'https://iris.to', 'https://ap
 // https://snort.social/e/note1ukmaarf2t9dkhxkphwh4sv4qsrtnvxwz09wmfpgsujwh3m48h8gstyef2f
 // https://github.com/MutinyWallet/blastr
 const DEFAULT_RELAY_LIST: Relay[] = [
-  { url: 'wss://relay.damus.io',         policy: { read: true,  write: true  } },  // free, Damus,        Iris, Amethyst, Coracle
-  { url: 'wss://nos.lol',                policy: { read: true,  write: true  } },  // free, Damus, Snort, Iris, Amethyst
-  { url: 'wss://relay.snort.social',     policy: { read: true,  write: true  } },  // free, Snort,        Iris, Amethyst
-  { url: 'wss://nostr.wine',             policy: { read: true,  write: false } },  // paid, Damus, Snort,       Amethyst
-  { url: 'wss://relay.nostrich.land',    policy: { read: true,  write: false } },  // paid,
-  { url: 'wss://universe.nostrich.land', policy: { read: true,  write: false } },  // paid, for global, you can append `?lang=en&lang=ja`
-  { url: 'wss://nostr.mutinywallet.com', policy: { read: false, write: true  } },  // free, write only, publishes to all known online relays
-  { url: 'wss://relay.nostr.band',       policy: { read: false, write: false } },  // free, search, turn `read` on when you search
+  { url: 'wss://relay.nostr.band',         policy: { read: false,  write: true  } },
+  { url: 'wss://relayable.org',                policy: { read: false,  write: true  } },
+  { url: 'wss://nos.lol',     policy: { read: false,  write: true  } },
+  { url: 'wss://relay.current.fyi',             policy: { read: false,  write: false } },
+  { url: 'wss://nostr.bitcoiner.social',    policy: { read: true,  write: false } },
+  { url: 'wss://relay.damus.io', policy: { read: true,  write: true } },
+  { url: 'wss://r.kojira.io', policy: { read: true, write: true  } },
+  { url: 'wss://relay.mostr.pub',       policy: { read: true, write: false } },
+  { url: 'wss://relay-jp.nostr.wirednet.jp',       policy: { read: false, write: true } },
+  { url: 'wss://yabu.me',       policy: { read: true, write: true } },
+  { url: 'wss://nrelay-jp.c-stellar.net',       policy: { read: false, write: true } },
+  { url: 'wss://relay.nostr.wirednet.jp',       policy: { read: false, write: true } },
+  { url: 'wss://offchain.pub',       policy: { read: true, write: true } },
+  { url: 'wss://relay.primal.net',       policy: { read: false, write: false } },
+  { url: 'wss://relay.snort.social',       policy: { read: true, write: false } },
+  { url: 'wss://nostr.fediverse.jp',       policy: { read: true, write: false } },
+  { url: 'wss://nostr.holybea.com',       policy: { read: true, write: true } },
+  { url: 'wss://nostr-relay.h3z.jp',       policy: { read: true, write: true } },
+  { url: 'wss://nostr.mom',       policy: { read: true, write: false } },
+  { url: 'wss://nostr.compile-error.net',       policy: { read: true, write: true } },
+  { url: 'wss://cagliostr.compile-error.net',       policy: { read: true, write: true } },
+  { url: 'wss://pyramid.fiatjaf.com',       policy: { read: true, write: false } },
+  { url: 'wss://creatr.nostr.wine',       policy: { read: true, write: false } },
+  { url: 'wss://nostr-relay.nokotaro.com',       policy: { read: true, write: true } },
+  { url: 'wss://xmr.usenostr.org',       policy: { read: true, write: true } },
+  { url: 'wss://relay.yozora.world',       policy: { read: true, write: true } },
+
 ];
 
 // https://github.com/damus-io/damus/blob/159d0fa2b59103a774c9b1acf4146bc01474245f/damus/ContentView.swift#L11
